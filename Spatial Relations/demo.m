@@ -8,9 +8,9 @@ data_dir = '../Data/';
 
 % Path to tracked point clouds for all objects
 % (indices correspond to frames and objects respectively)
-pcd_fmt = [data_dir 'Kostas_Stir_02/%d_%d.pcd'];
+pcd_fmt = [data_dir 'Stir_02/%d_%d.pcd'];
 % Plane coefficients for workspace surface
-p_coeff = [data_dir 'Kostas_Stir_02/plane_coefficients.csv'];
+p_coeff = [data_dir 'Stir_02/plane_coefficients.csv'];
 
 % Compute 'full' PVS-based descriptor (including all 8 spatial relations)
 A = getActionDescriptor(pcd_fmt, p_coeff, 'full');
